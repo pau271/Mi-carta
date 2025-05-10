@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Te Amo Mucho Mi Amor</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #ffcce0 url('https://i.imgur.com/yOQ7vWx.png') repeat; /* Corazones suaves */
+      color: #444;
+      overflow-x: hidden;
+    }
+    .cover {
+      height: 100vh;
+      background: #ff6699;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 2rem;
+    }
+    .cover h1 {
+      font-size: 2.8em;
+      color: #fff0f5;
+      text-shadow: 2px 2px #cc3366;
+    }
+    .cover button {
+      margin-top: 2rem;
+      background-color: #fff0f5;
+      color: #cc3366;
+      padding: 1rem 2rem;
+      font-size: 1.2em;
+      border: none;
+      border-radius: 1rem;
+      cursor: pointer;
+    }
+    .letter {
+      display: none;
+      background: white;
+      color: #333;
+      padding: 3rem 2rem;
+      max-width: 800px;
+      margin: 2rem auto;
+      border-radius: 1.5rem;
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+      position: relative;
+    }
+    .hearts {
+      position: absolute;
+      top: -30px;
+      right: -30px;
+      font-size: 2em;
+      animation: float 3s infinite ease-in-out;
+      color: #ff3366;
+    }
+    @keyframes float {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+      100% { transform: translateY(0); }
+    }
+    .bg-teamo {
+      position: absolute;
+      font-size: 4em;
+      opacity: 0.07;
+      color: #ff3366;
+      white-space: nowrap;
+      transform: rotate(-25deg);
+      pointer-events: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="cover" id="cover">
+    <h1>TE AMO MUCHO MI AMOR</h1>
+    <button onclick="abrirCarta()">Abrir la carta</button>
+  </div>
+
+  <div class="letter" id="carta">
+    <div class="hearts">❤❤❤</div>
+    <div class="bg-teamo" style="top:10%; left:10%;">Te Amo</div>
+    <div class="bg-teamo" style="top:40%; right:5%;">Te Amo</div>
+    <div class="bg-teamo" style="bottom:10%; left:25%;">Te Amo</div>
+
+    <p>Hola mi amor,</p>
+    <p>Ya no sé cómo empezar esto sin que me tiemble el corazón... pero aquí voy.</p>
+    <p>Solo quería recordarte lo mucho que te amo, lo feliz que me haces y lo agradecido(a) que estoy por tenerte. Eres mi razón, mi calma, mi locura bonita, mi todo.</p>
+    <p>Gracias por existir, por aguantarme, por quererme como solo tú sabes hacerlo. No me sueltes nunca, que yo no pienso dejarte jamás.</p>
+    <p>Te amo con cada parte de mi ser.</p>
+    <p>Con todo mi corazón,</p>
+    <p><strong>Tu persona que te adora.</strong></p>
+  </div>
+
+  <script>
+    function abrirCarta() {
+      document.getElementById('cover').style.display = 'none';
+      document.getElementById('carta').style.display = 'block';
+    }
+  </script>
+</body>
+  </html>
